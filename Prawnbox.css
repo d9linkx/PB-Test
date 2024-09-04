@@ -1,0 +1,442 @@
+/* General Reset and Box Sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ 
+ html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+ }
+ 
+ 
+ body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+ }
+ 
+ 
+ /* Header */
+ header {
+    background-color: #023c8b;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+ }
+ 
+ 
+ header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+ }
+ 
+ 
+ header .logo h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+ }
+ 
+ 
+ header nav {
+    display: flex;
+    align-items: center;
+ }
+ 
+ 
+ header .nav-links {
+    display: flex;
+    list-style: none;
+ }
+ 
+ 
+ header .nav-links li {
+    margin: 0 1rem;
+ }
+ 
+ 
+ header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+ }
+ 
+ 
+ header .nav-links a:hover {
+    color: #81D4FA;
+ }
+ 
+ 
+ header .menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+ }
+ 
+ 
+ header .menu-toggle .bar {
+    width: 25px;
+    height: 2px;
+    background: #fff;
+    margin: 3px 0;
+ }
+ 
+ 
+ /* Hero Section */
+ .hero {
+    background: linear-gradient(to right, #023c8b, #023c8b);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ 
+ .hero h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .hero .cta-btn {
+    background-color: #00a2dc;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+ }
+ 
+ 
+ .hero .cta-btn:hover {
+    background-color: #f9f9f9;
+    color: #033e73;
+ }
+ 
+ 
+ /* Features Section */
+ .features {
+    background: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+ }
+ 
+ 
+ .features h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .features .feature {
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .features .feature h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .features .feature p {
+    font-size: 1rem;
+    color: #7b8a9d;
+ }
+ 
+ 
+ /* How It Works Section */
+ .how-it-works {
+    background: #f2fafd;
+    padding: 4rem 1rem;
+ }
+ 
+ 
+ .how-it-works h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .how-it-works .steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ 
+ .how-it-works .step {
+    margin-bottom: 2rem;
+    text-align: center;
+ }
+ 
+ 
+ .how-it-works .step h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .how-it-works .step p {
+    font-size: 1rem;
+    color: #7b8a9d;
+ }
+ 
+ 
+ /* Testimonials Section */
+ .customer-reviews {
+    background: #fff;
+    padding: 4rem 1rem;
+ }
+ 
+ 
+ .customer-reviews h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .customer-reviews .reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ 
+ .customer-reviews .review {
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 400px;
+ }
+ 
+ 
+ .customer-reviews .review img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .customer-reviews .review p {
+    font-size: 1rem;
+    color: #7b8a9d;
+    margin-bottom: 0.5rem;
+ }
+ 
+ 
+ .customer-reviews .review h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+ }
+ 
+ 
+ /* Become a Pal Section */
+ .become-pal {
+    background: #0288D1;
+    color: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+ }
+ 
+ 
+ .become-pal h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ .become-pal p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .become-pal .cta-btn {
+    background-color: #2d2f77;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+ }
+ 
+ 
+ .become-pal .cta-btn:hover {
+    background-color: #4c3b9b;
+ }
+ 
+ 
+ /* Pal Login Section */
+ .pal-login {
+    background: #f2fafd;
+    padding: 4rem 1rem;
+    text-align: center;
+ }
+ 
+ 
+ .pal-login h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+ }
+ 
+ 
+ .pal-login form {
+    max-width: 400px;
+    margin: 0 auto;
+ }
+ 
+ 
+ .pal-login .form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+ }
+ 
+ 
+ .pal-login label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+ }
+ 
+ 
+ .pal-login input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+ }
+ 
+ 
+ .pal-login button {
+    background-color: #2d2f77;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+ }
+ 
+ 
+ .pal-login button:hover {
+    background-color: #4c3b9b;
+ }
+ 
+ 
+ /* Footer */
+ footer {
+    background-color: #023c8b;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+ }
+ 
+ 
+ footer .footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem;
+ }
+ 
+ 
+ footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+ }
+ 
+ 
+ footer .footer-links a:hover {
+    color: #81D4FA;
+ }
+ 
+ 
+ footer p {
+    font-size: 0.9rem;
+ }
+ 
+ 
+ /* Responsive Design */
+ @media (max-width: 768px) {
+    header .nav-links {
+        display: none;
+    }
+ 
+ 
+    header .menu-toggle {
+        display: flex;
+    }
+ 
+ 
+    header.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #023c8b;
+        padding: 1rem;
+    }
+ 
+ 
+    header.active .nav-links a {
+        margin: 1rem 0;
+    }
+ 
+ 
+    .how-it-works .steps {
+        flex-direction: column;
+    }
+ 
+ 
+    .features, .customer-reviews, .become-pal, .pal-login {
+        padding: 2rem 1rem;
+    }
+ }
+ 
+ 
+ 
+ 
